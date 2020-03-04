@@ -1,0 +1,17 @@
+name: 'Upload File'
+description: 'Upload a file to github'
+author: 'Sascha Dewald'
+branding:
+  icon: 'package'
+  color: 'blue'
+inputs:
+  path:
+    description: 'the path to the file'
+    default: ''
+  name:
+outputs:
+  link:
+    description: 'the link to the file'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
